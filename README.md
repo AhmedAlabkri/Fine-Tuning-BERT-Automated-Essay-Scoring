@@ -45,6 +45,14 @@ pip install -r requirements.txt
 
 3- Then you can run the notebooks, run all the cells in each notebook to execute the code and reproduce the results.
 
+- Or simply access the google colab notebooks, 1st model(Without additional features):
+
+https://colab.research.google.com/drive/1rApB67sZ2R5lxZu8m1PuMbOh9LwHlw_I?usp=sharing
+
+Second model:
+
+https://colab.research.google.com/drive/1cl12u6kjZhHFbKGdzjsg5aa2jgQeSbjH?usp=sharing
+
 # Key Findings
 - Both models demonstrated the potential to score IELTS essays, with the first model showing slightly better performance on test data.
   
