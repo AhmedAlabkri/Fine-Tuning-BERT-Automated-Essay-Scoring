@@ -45,6 +45,20 @@ pip install -r requirements.txt
 
 3- Then you can run the notebooks, run all the cells in each notebook to execute the code and reproduce the results.
 
+# Key Findings
+- Both models demonstrated the potential to score IELTS essays, with the first model showing slightly better performance on test data.
+  
+- The inclusion of custom features in the second model did not significantly improve accuracy, highlighting the robustness of the BERT model alone.
+
+- While the models showed potential, the current scoring accuracy of the BERT model still needs improvement to match the precision of human evaluators.
+
+- The Mean Absolute Error (MAE) was used as the evaluation metric, showing close performance between training and test datasets, indicating minimal overfitting.
+
+# Significance
+- This project underscores the viability of using AI for automated essay scoring, which can enhance the efficiency of educational assessments.
+
+- The results suggest that while BERT-based models can provide consistent scoring, further refinement is necessary to achieve accuracy comparable to human evaluators, thereby reducing time and cost associated with manual grading.
+
 
 # Authors
 - Ahmed Alabkri
