@@ -6,3 +6,37 @@ The goal is to compare AI-driven scoring with human scoring to assess the accura
 
 # Problem statment/Why?
 NLP algorithms are being used to score essays, but it’s unclear how well they compare to human scorers. In general, human scoring of essays is slow and can be inconsistent, for instance, the same test scorer might give the same piece of writing different score depanding in so many factors. In contrast, AI can score essays quickly and consistently but struggles with understanding nuanced language. This project compares AI-driven scoring using the BERT model with human scoring to see if AI can be just as accurate and efficient.
+
+# Data Collection and Preprocessing
+We used the IELTS writing scored essays dataset from Kaggle. The dataset includes two types of essays, task 1 and task 2. Since task 1 assesses the candidate's ability to analyze a graph or chart, we decided to focus only on task 2 and filtered out task 1 in the preprocessing stage.
+
+For the second model, we extracted the following features in the same Google Colab document:
+- The length of the essay.
+- Number of linking words.
+- Number of unique words.
+- Number of spelling errors.
+- Synonyms used.
+- Grammar mistakes (using the LanguageTool tool).
+
+# Methods
+1. We fine-tuned the BERT model with the dataset we found on Kaggle, without extracting additional features, to test the capabilities of the BERT model in scoring IELTS essay tasks.
+2. Similarly, we fine-tuned the BERT model, but this time we extracted additional features before the fine-tuning step. This was done to see if we could improve the accuracy compared to the first model.
+
+- We split the dataset into a training set, cross-validation set, and testing set (more details in the Google Colab document).
+- Normalization of the extracted features was performed.
+
+Fine-Tuning Steps We Followed:
+
+1. Call the pre-trained model (Source of model: https://huggingface.co/google-bert/bert-base-cased)
+2. Call the tokenizer.
+3. Convert the tokenized inputs and labels into TensorFlow datasets.
+4. Train the model.
+
+# Authors
+- Ahmed Alabkri
+- Ernest Amoateng
+
+# References
+- The pre-trained model from Huggingface: https://huggingface.co/google-bert/bert-base-cased
+- IELTS scores from Kaggle: https://www.kaggle.com/datasets/mazlumi/ielts-writing-scored-essays-dataset/data
+
