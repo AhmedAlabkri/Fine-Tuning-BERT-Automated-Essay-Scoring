@@ -32,6 +32,15 @@ Fine-Tuning Steps We Followed:
 3. Convert the tokenized inputs and labels into TensorFlow datasets.
 4. Train the model.
 
+# How to use?
+1- Clone the repository:
+git clone https://github.com/yourusername/Fine-Tuning-BERT-Automated-Essay-Scoring.git
+cd Fine-Tuning-BERT-Automated-Essay-Scoring
+2- Install the dependencies from the requirements.txt:
+pip install -r requirements.txt
+3- Then you can run the notebooks, run all the cells in each notebook to execute the code and reproduce the results.
+
+
 # Authors
 - Ahmed Alabkri
 - Ernest Amoateng
