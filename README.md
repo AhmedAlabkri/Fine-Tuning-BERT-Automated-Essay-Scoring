@@ -67,6 +67,12 @@ https://colab.research.google.com/drive/1cl12u6kjZhHFbKGdzjsg5aa2jgQeSbjH?usp=sh
 
 - The results suggest that while BERT-based models can provide consistent scoring, further refinement is necessary to achieve accuracy comparable to human evaluators, thereby reducing time and cost associated with manual grading.
 
+# What Could Be Improved?
+- We could extract more semantic features to capture the nuances of the essays better. Most of the features we extracted are statistical and do not reflect semantic meaning.
+
+- Exploring other transformer-based models or hybrid approaches could potentially improve accuracy. BERT is powerful, but maybe trying different models can help.
+
+- Increasing the size and diversity of the training dataset could help in generalizing the model better.
 
 # Authors
 - Ahmed Alabkri
