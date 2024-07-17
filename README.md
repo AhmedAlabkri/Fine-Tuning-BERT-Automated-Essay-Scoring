@@ -34,7 +34,7 @@ Fine-Tuning Steps We Followed:
 
 # How to use?
 1- Clone the repository:
-git clone https://github.com/yourusername/Fine-Tuning-BERT-Automated-Essay-Scoring.git
+git clone https://github.com/AhmedAlabkri/Fine-Tuning-BERT-Automated-Essay-Scoring.git
 cd Fine-Tuning-BERT-Automated-Essay-Scoring
 2- Install the dependencies from the requirements.txt:
 pip install -r requirements.txt
